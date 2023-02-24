@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/css/bootstrap.min.css">
+    <script src="./assets/js/jquery-3.6.3.min.js"></script>
+    <link rel="stylesheet" href="./assets/js/js/bootstrap.min.js">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+       <div class="container">
+        <div class="row nav_line">
+           <div class="col-md-12">
+            <ul id="item_ul">
+                            <li class="item_name"><a href="#">Desserts</a> </li>
+                            <li class="item_name"><a href="#">Spicy</a> </li>
+                            <li class="item_name"><a href="#"> Ice-cream</a></li>
+                            <li class="item_name"><a href="#">Juice</a> </li>
+            </ul>
+           </div>
+        </div>
+       </div>
+ <div class="row">
+    <div class="col-md-10">
+        <div class="row " id="r1">
+
+
+        </div>
+        <div class="row mt-5" id="r2">
+
+
+        </div>
+
+        <div class="row mt-5" id="r3">
+
+
+        </div>
+        <div class="row mt-5" id="r4">
+
+
+        </div>
+    </div>
+ </div>
+       
+
+
+
+    </div>
+    <script>
+        // first column products loop function
+        let row1 = $("#r1");
+        let col1 = "";
+        $.ajax({
+            url: "./assets/js/json_files/desert.json",
+            type: "get",
+            success: function (data) {
+                $.each(data.desert_products, function (key, value) {
+                    col1 += `
+                  <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" src="`
+                        + value.img + `">
+<div class="card-body">
+    <h4 class="card-title">
+        `+ value.name + `
+
+    </h4>
+    <p class="card-text">
+        `+ value.details + `
+
+    </p>
+    <h5 class="card-title">`+ value.price + `</h5>
+
+     
+</div>
+                    
+</div>
+</div>
+`
+                })
+                row1.html(col1);
+            }
+        })
+        // second column products loop function
+
+        let row2 = $("#r2");
+        let col2 = "";
+        $.ajax({
+            url: "./assets/js/json_files/juice.json",
+            type: "get",
+            success: function (data) {
+                $.each(data.juice_products, function (key, value) {
+                    col2 += `
+                  <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" src="`
+                        + value.img + `">
+<div class="card-body">
+    <h4 class="card-title">
+        `+ value.name + `
+
+    </h4>
+    <p class="card-text">
+        `+ value.details + `
+
+    </p>
+    <h5 class="card-title">`+ value.price + `</h5>
+
+     
+</div>
+                    
+                </div>
+            </div>
+                  `
+                })
+                row2.html(col2);
+            }
+        })
+        // third column products loop function
+
+        let row3 = $("#r3");
+        let col3 = "";
+        $.ajax({
+            url: "./assets/js/json_files/spicy.json",
+            type: "get",
+            success: function (data) {
+                $.each(data.spicy_products, function (key, value) {
+                    col3 += `
+                  <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" src="`
+                        + value.img + `">
+<div class="card-body">
+    <h4 class="card-title">
+        `+ value.name + `
+
+    </h4>
+    <p class="card-text">
+        `+ value.details + `
+
+    </p>
+    <h5 class="card-title">`+ value.price + `</h5>
+
+     
+</div>
+                    
+                </div>
+            </div>
+                  `
+                })
+                row3.html(col3);
+            }
+        })
+        // fourth column products loop function
+        let row4 = $("#r4");
+        let col4 = "";
+        $.ajax({
+            url: "./assets/js/json_files/sweet.json",
+            type: "get",
+            success: function (data) {
+                $.each(data.sweet_products, function (key, value) {
+                    col4 += `
+                  <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" src="`
+                        + value.img + `">
+<div class="card-body">
+    <h4 class="card-title pro_name">
+        `+ value.name + `
+
+    </h4>
+    <p class="card-text">
+        `+ value.details + `
+
+    </p>
+    <h5 class="card-title">`+ value.price + `</h5>
+
+     
+</div>
+                    
+                </div>
+            </div>
+                  `
+                })
+                row4.html(col4);
+            }
+        })
+    </script>
+</body>
+
+</html>

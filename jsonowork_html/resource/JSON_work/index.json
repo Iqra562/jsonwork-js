@@ -1,0 +1,11 @@
+
+{
+    "nokia_Pr" : [
+        {"id":1,"name":"samsung","price":"2893", "images":"/assets/images/desert_images/desert1.jpg"},
+        {"id":2,"name":"ahxj","price":3903,"images":"/assets/images/desert_images/desert1.jpg"},
+        {"id":3,"name":"samsg","price":"2893", "images":"/assets/images/desert_images/desert1.jpg"},
+        {"id":4,"name":"ahxj","price":3903,"images":"/assets/images/desert_images/desert1.jpg"},
+        {"id":5,"name":"ahxj","price":3903,"images":"/assets/images/desert_images/desert1.jpg"}
+        
+    ]
+}

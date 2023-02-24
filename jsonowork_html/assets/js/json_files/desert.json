@@ -1,0 +1,8 @@
+{
+    "desert_products":[
+        {"id" :1,"name":"Sprinkle Dessert","price":"Rs 827","img":"./assets/images/desert_images/desert1.jpg","details":"Dessert is a course that concludes a meal. The crts of the world, such as much of Greece and West Africa. " },
+        {"id" :2,"name":"Chocomo Dessert","price":"Rs 722","img":"./assets/images/desert_images/desert2.jpg","details":"A dessert is something sweet, such as fruit, pastry, or ice cream, that you eat at the end of meal."},
+        {"id" :3,"name":"Choco Dessert","price":"Rs 982","img":"./assets/images/desert_images/desert3.jpg","details":"The name comes from ent finishing dishes to denote the end of a meal and a time to leave the table."},
+        {"id" :4,"name":"Crunch Dessert","price":"Rs 182","img":"./assets/images/desert_images/desert4.jpeg","details":"Dessert, the last course of a meal. In the United States of pastry, cake, ice cream, pudding, or fresh or cooked"}
+    ]
+}
