@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/css/bootstrap.min.css">
+    <script src="/assets/js/jquery-3.6.3.min.js"></script>
+    <link rel="stylesheet" href="/assets/js/js/bootstrap.min.js">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" id="r1">
+
+<img src="" alt="">
+        </div>
+    </div>
+    <script>
+        let row1 = $("#r1")
+        let st1 = "";
+        $.ajax({
+            url: "/assets/js/json_files/index.json",
+            type: "get",
+            success: function (data) {
+                $.each(data.nokia_Pr, function (key, value) {
+                    st1 += `   <div class="col-md-3">
+        <div class="card">
+            <img class="card-img-top" src="`+ value.images + `" alt="Title">
+            <div class="card-body">
+                <h4 class="card-title">`+ value.name + `</h4>
+                <p class="card-text">`+ value.price + `</p>
+                <a href="d.html?id=`+ value.id + `&name=` + value.name + `&price=` + value.price + `&images=` + value.images + `">Details</a>
+            </div>
+        </div>
+    </div>`
+                })
+                row1.html(st1)
+            }
+
+        })
+    </script>
+</body>
+
+</html>

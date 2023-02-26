@@ -1,0 +1,8 @@
+{
+    "spicy_products":[
+        {"id" :1,"name":"Greenmayo","price":"Rs 977","img":"./assets/images/spicy_images/spicy1.jpg","details":"Data across numerous studies indicates that certain spices — like cumin, cinnamon, turmeric. "},
+        {"id" :2,"name":"Biryani","price":"Rs 877","img":"./assets/images/spicy_images/spicy2.jpg","details":"A spice is   root, a seed, fruit, root, bark, or other plant substance primarily used for flavoring . "},
+        {"id" :3,"name":"RoastChicken","price":"Rs 787","img":"./assets/images/spicy_images/spicy3.webp","details":"However, there are also various amazing benefits that you may acquire for eating spicy foods."},
+        {"id" :4,"name":"Spicypotato","price":"Rs 827","img":"./assets/images/spicy_images/spicy4.webp","details":"Also, contrary to the magic of flavour spices add to the  root, dish, regular consumption of spicy  "}
+    ]
+}

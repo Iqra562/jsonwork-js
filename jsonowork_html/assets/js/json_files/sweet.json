@@ -1,8 +1,0 @@
-{
-    "sweet_products":[
-        {"id" :1,"name":"Berry Ice-cream","price":"Rs 237","img":"./assets/images/sweets_images/sweet1.jpg","details":"Ice cream is a sweetened frozen food typically eaten  root, as a snack  root,or dessert. "},
-        {"id" :2,"name":"Creamy Ice-cream","price":"Rs 237","img":"./assets/images/sweets_images/sweet2.jpeg","details":"ice cream, frozen dairy food made from cream or butterfat, milk, sugar, and flavourings."},
-        {"id" :3,"name":"Vanilla Ice-cream","price":"Rs 238","img":"./assets/images/sweets_images/sweet3.jpg","details":"Ice cream  root, is a mixture of milk, cream, sugar, creamy delight using special techniques."},
-        {"id" :4,"name":"Pink Ice-cream","price":"Rs 832","img":"./assets/images/sweets_images/sweet4.jpg","details":"Ice cream made with more milk . The lower fat content makes it denser intense milk flavour. "}
-    ]
-}

@@ -1,8 +1,0 @@
-{
-    "juice_products":[
-        {"id" :1,"name":"Lemon Juice","price":"Rs 237","img":"./assets/images/juice_images/juice1.jpg","details":"Juice is a drink made from the extraction or pressing of the natural liquid contained in fruit. "},
-        {"id" :2,"name":"Watermelon Juice","price":"Rs 237","img":"./assets/images/juice_images/juice2.jpeg","details":"Juice is a liquid that comes from plants, animals or fruit. The juice from fruit is often made into a drink."},
-        {"id" :3,"name":"Orange Juice","price":"Rs 238","img":"./assets/images/juice_images/juice3.jpg","details":"Fruit juice is 100% pure juice made from  fresh fruit or from whole fruit, depending on the type used."},
-        {"id" :4,"name":"Strawberry Juice","price":"Rs 832","img":"./assets/images/juice_images/juice4.jfif","details":"jFruit Juice. Fruit juices are biphasic colloidal systems consisting of a liquid phase, termed the “serum,”."}
-    ]
-}
