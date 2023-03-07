@@ -81,7 +81,7 @@ list-style-type: none;
 @media (max-width:320px){
 
 #item_ul{
-    overflow-y: scroll;
+    /* overflow-y: scroll;
     display: flex;
     justify-content: space-around;
     
@@ -93,7 +93,7 @@ list-style-type: none;
     height: 60px;
     padding: 5px 15px;
 
- }
+ } */
 
 }
 /*//// media query end ////*/

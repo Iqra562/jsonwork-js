@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details page</title>
+</head>
+<body>
+    <div class="contianer">
+        <div class="row r">
+          
+        </div>
+    </div>
+    <script>
+        let r= $(".r");
+        let url = location.href;
+        let obj = new URL(url);
+        let name = obj.searchParams.get("name");
+        let price = obj.searchParams.get("price");
+        let image = obj.searchParams.get("img");
+        let details = obj.searchParams.get("details");
+        r.html(`
+        <div class="col-md-6 mt-5">
+            <img src="`+image+`" alt="">
+
+           </div>
+           <div class="col-md-6 mt-5">
+          <h1>`+name+`</h1>
+          <h2>`+price+`</h2>
+          <p>
+            `+details+`
+          </p>
+           </div>
+        `)
+    </script>
+</body>
+</html>
